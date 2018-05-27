@@ -13,14 +13,16 @@ public class Square extends Figure {
     }
 
     /**
-     * Extended methods from the main Figure class with proper formulas for square.
+     * Extended method from the main Figure class with proper formula for counting square perimeter.
      */
-
     @Override
     public double getPerimeter() {
         return 4 * length;
     }
 
+    /**
+     * Extended method from the main Figure class with proper formula for counting square area.
+     */
     @Override
     public double getArea() {
         return length * length;

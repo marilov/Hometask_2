@@ -13,14 +13,16 @@ public class Circle extends Figure {
     }
 
     /**
-     * Extended methods from the main Figure class with proper formulas for circle .
+     * Extended method from the main Figure class with proper formula for counting circle perimeter.
      */
-
     @Override
     public double getPerimeter() {
         return 2 * 3.14 * radius;
     }
 
+    /**
+     * Extended method from the main Figure class with proper formula for counting circle area.
+     */
     @Override
     public double getArea() {
         return 3.14 * (radius * radius);

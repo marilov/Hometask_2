@@ -15,14 +15,16 @@ public class Rectangle extends Figure {
     }
 
     /**
-     * Extended methods from the main Figure class with proper formulas for rectangle.
+     * Extended method from the main Figure class with proper formula for counting rectangle perimeter.
      */
-
     @Override
     public double getPerimeter() {
         return 2 * (width + length);
     }
 
+    /**
+     * Extended method from the main Figure class with proper formula for counting rectangle area.
+     */
     @Override
     public double getArea() {
         return width * length;
