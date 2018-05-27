@@ -1,35 +1,20 @@
 package com.sokyrko;
 
-import javax.sound.midi.Soundbank;
-
 public class Main {
 
     public static void main(String[] args) {
+        IPhoneX iPhoneX = new IPhoneX("iPhone X", 5.6, 7.6, false, true);
+        System.out.println(iPhoneX.getPhoneName());
+        System.out.println(iPhoneX.getScreenSize());
+        System.out.println(iPhoneX.getPhoneSize());
+        iPhoneX.getSms();
+        iPhoneX.getCall();
 
-        /**
-         * This object contains radius value of the circle and prints out area and perimeter of it.
-         */
-
-        Circle circle = new Circle(8);
-        System.out.println(circle.getArea());
-        System.out.println(circle.getPerimeter());
-
-        /**
-         * This object contains value of width and length of the sides of rectangle and prints its area and perimeter.
-         */
-
-        Rectangle rectangle = new Rectangle(8, 10);
-        System.out.println(rectangle.getArea());
-        System.out.println(rectangle.getPerimeter());
-
-        /**
-         * This object contains square side value and prints its area and perimeter.
-         */
-
-        Square square = new Square(4);
-        System.out.println(square.getArea());
-        System.out.println(square.getPerimeter());
-
+        SamsungS8 samsungS8 = new SamsungS8("Samsung S8", 7.9, 3.9, true, false);
+        System.out.println(samsungS8.getPhoneName());
+        System.out.println(samsungS8.getScreenSize());
+        System.out.println(samsungS8.getPhoneSize());
+        samsungS8.getSms();
+        samsungS8.getCall();
     }
-
 }
